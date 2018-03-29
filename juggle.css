@@ -61,7 +61,7 @@
     border: solid 0.5px black;
     top:114px;
     margin-top:-3px;
-    animation: wrist_rotation 1s infinite linear reverse;
+    animation: wrist_rotate 1s infinite linear reverse;
     transform-origin: top;
 
 }
@@ -96,26 +96,26 @@
 }
 
 .animation_ball_1{
-    animation: left_balls_rotation 2s linear;
+    animation: balls_rotation 2s linear;
     animation-iteration-count: infinite;
 }
 
 .animation_ball_3{
-    animation: left_balls_rotation 2s linear;
+    animation: balls_rotation 2s linear;
     animation-iteration-count: infinite;
     animation-delay:-1s;
 }
 .animation_ball_2{
-    animation: right_balls_rotation 2s linear;
+    animation: balls_rotation 2s linear;
     animation-iteration-count: infinite;
     animation-delay:-0.5s;
 }
 .animation_ball_4{
-    animation: right_balls_rotation 2s linear;
+    animation: balls_rotation 2s linear;
     animation-iteration-count: infinite;
     animation-delay:-1.5s;
 }
-@keyframes wrist_rotation {
+@keyframes wrist_rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
@@ -125,7 +125,7 @@
     to {transform: rotate(-5.5deg);}
 }
 
-@keyframes left_balls_rotation{
+@keyframes balls_rotation{
     0%{
         top:30px;
     }
@@ -148,30 +148,5 @@
         top:30px;
     }
 }
-@keyframes right_balls_rotation{
-    0%{
-        top:30px;
-    }
-    15.6%{
-        transform: translateX(-40px);
-    }
-    34.4%{
-        transform: translateX(-40px);
-    }
-    50%{
-        top:285px;
-    }
-    65.6%{
-        transform: translateX(40px);
-    }
-    84.4%{
-        transform: translateX(40px);
-    }
-    100%{
-        top:30px;
-    }
-}
-@keyframes wrist_rotate{
-    from {transform: rotate(359deg);}
-    to {transform: rotate(0deg);}
-    }
+
+
