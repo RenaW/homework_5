@@ -61,7 +61,7 @@
     border: solid 0.5px black;
     top:114px;
     margin-top:-3px;
-    animation: wrist_rotate 1s infinite linear reverse;
+    animation: wrist_rotation 1s infinite linear reverse;
     transform-origin: top;
 
 }
@@ -115,7 +115,7 @@
     animation-iteration-count: infinite;
     animation-delay:-1.5s;
 }
-@keyframes wrist_rotate {
+@keyframes wrist_rotation {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
